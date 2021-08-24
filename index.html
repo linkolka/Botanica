@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,45 +9,43 @@
 <body>
     <header class="page-header">
         <nav class="header-nav">
+            <a class="logo">
+                <img src="img/logo.svg" width="100" height = "33">
+            </a>
             <ul class="menu-list">
                 <li class="menu-item">
-                    <a href="" class="menu-link">Каталог</a>
+                    <a href="#" class="menu-link">Каталог</a>
                 </li>
                 <li class="menu-item">
-                    <a href="" class="menu-link">Доставка и оплата</a>
+                    <a href="#" class="menu-link">Доставка и оплата</a>
                 </li>
                 <li class="menu-item">
-                    <a href="" class="menu-link">Отзывы</a>
+                    <a href="#" class="menu-link">Отзывы</a>
                 </li>
                 <li class="menu-item">
-                    <a href="" class="menu-link">
-                        <img src="img/logo.svg" width="100" height = "33">
-                    </a>
+                    <a href="#" class="menu-link">Спецпредложения</a>
                 </li>
                 <li class="menu-item">
-                    <a href="" class="menu-link">Спецпредложения</a>
+                    <a href="#" class="menu-link">Контакты</a>
                 </li>
                 <li class="menu-item">
-                    <a href="" class="menu-link">Контакты</a>
-                </li>
-                <li class="menu-item">
-                    <a href="" class="menu-link">Корзина</a>
+                    <a href="#" class="menu-link">Корзина</a>
                 </li>
             </ul>
         </nav>
-        <section class="promo">
-            <div class="promo-text">
-                <h1> Авторские букеты <i>в Петербурге</i></h1>
-                <p>Оригинальные свежие букеты с доставкой по всему городу</p>
-                <a href="#" class="btn">Смотреть каталог</a>
-            </div>
-            <img src="img/promo1.png" alt="букет розовых тюльпанов" width="386" height="404" class="promo-img">
-            <img src="img/promo2.png" alt="букет белых альстромерий и розовых роз" width="386" height="404" class="promo-img">
-        </section>
     </header>
     <main class="main-content">
-        <section class="advantages">
-            <h2 class="hidden">Наши преимущества</h2>
+        <section class="promo">
+            <div class="promo-text">
+                <h1> Авторские букеты <span class="italic">в Петербурге</span></h1>
+                <p>Оригинальные свежие букеты с доставкой по всему городу</p>
+                <a href="#" class="btn">Смотреть каталог</a>
+            </div> <!--картинки в дивы обернуть-->
+            <img src="img/promo1.jpg" alt="букет розовых тюльпанов" width="386" height="404" class="promo-img">
+            <img src="img/promo2.jpg" alt="букет белых альстромерий и розовых роз" width="386" height="404" class="promo-img">
+        </section>
+        <section class="advantages"> 
+            <h2 class="vissually-hidden">Наши преимущества</h2>
             <ul class="advantages-list">
                 <li class="advantages-item">
                     <h3 class="advantages-heading">Быстрая доставка</h3>
@@ -65,7 +63,7 @@
         </section>
         <section class="popular">
             <h2 class="section-header">Популярные букеты</h2>
-            <article class="popular-bouquets">
+            <article class="popular-bouquet">
                 <div class="popular-description">
                     <h3>Букет «Нежность»</h3>
                     <p>Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
@@ -73,31 +71,46 @@
                     <p class="bouquet-price">3600 руб.</p>
                     <a href="#" class="btn">Заказать</a>
                 </div>
-                <img src="img/popular1.png" width="387" height="438" alt="Большой букет кремовых мелких роз">
+                <div class="popular-image">
+                    <img src="img/popular1.png" width="387" height="438" alt="Большой букет кремовых мелких роз">
+                </div>
+                
             </article>
-            <svg width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM51 9H1V7H51V9Z" fill="#AE7C78"/>
-            </svg>
-            <svg width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z" fill="#AE7C78"/>
-            </svg>
-
-
+                <div class="popular-pagination">
+                    <button class="arrow arrow-left" type="button">
+                        <svg width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM51 9H1V7H51V9Z" fill="#AE7C78"/>
+                        </svg>
+                    </button>
+                    <button class="arrow arrow-right" type="button">
+                        <svg width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z" fill="#AE7C78"/>
+                        </svg>
+                    </button>
+                </div>
         </section>
         <section class="catalog">
-            <h2 class="hidden">catalog</h2>
-            <div class="catalog-item">
-                <h3>Свадебные букеты</h3>
-                <p>Букеты для невес</p>
-            </div>
-            <div class="catalog-item">
-                <h3>Букеты с пионами</h3>
-                <p>Букеты с сезонными пионами</p>
-            </div>
-            <div class="catalog-item">
-                <h3>Выбрать букет</h3>
-                <p>Букеты в ассортименте</p>
-            </div>
+            <h2 class="hidden">Каталог</h2>
+            <ul class="catalog-list">
+                <li class="catalog-item">
+                    <a href="#" class="catalog-link">
+                        <h3>Свадебные букеты</h3>
+                        <p>Букеты для невес</p>
+                    </a>
+                </li>
+                <li class="catalog-item">
+                    <a href="#" class="catalog-link">
+                        <h3>Букеты с пионами</h3>
+                        <p>Букеты с сезонными пионами</p>
+                    </a>
+                </li>
+                <li class="catalog-item">
+                    <a href="#" class="catalog-link">
+                         <h3>Выбрать букет</h3>
+                         <p>Букеты в ассортименте</p>
+                    </a>
+                </li>
+            </ul>
         </section>
         <section class="discounts">
             <h2 class="hidden">Скидки</h2>
@@ -105,7 +118,7 @@
                 <h3>Скидка 10% на первый заказ</h3>
                 <p>Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
             </div>
-            <img src="img/discount.png" width="590" height="391" alt="Большо букет из разных цветов">
+            <img src="img/discount-image.jpg" width="590" height="391" alt="Большой букет из разных цветов">
         </section>
         <section class="scheme">
             <div class="scheme-description">
@@ -135,36 +148,64 @@
                 <p>
                     Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым
                 </p>
-                <div class="social">
-                    <img src="img/instagram_icon.svg" width="21" height="20">
-                    <img src="img/facebook_icon.svg" width="12" height="20">
-                    <img src="img/twitter_icon.svg" width="26" height="20">
-                </div>
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="#" class="insta-link social-link">Инстаграм</a>
+                    </li>
+                    <li class="social-item">
+                         <a href="#" class="fb-link social-link">Фейсбук</a>
+                    </li>
+                     <li class="social-item">
+                        <a href="#" class="tw-link social-link">Твиттер</a>
+                     </li>
+                </ul>
                 <div class="social-images">
-                    <img src="img/social1.png" width="285" height="220" alt="Букет с зелеными цветами">
-                    <img src="img/social2.png" width="285" height="220" alt="Букет из розовых роз">
-                    <img src="img/social3.png" width="387" height="460" alt="Букет из розовых гвоздик">
+                    <img src="img/social1.jpg" width="285" height="220" alt="Букет с зелеными цветами">
+                    <img src="img/social2.jpg" width="285" height="220" alt="Букет из розовых роз">
+                    <img src="img/social3.jpg" width="387" height="460" alt="Букет из розовых гвоздик">
                 </div>
+        </section>
+        <section class="reviews">
+            <h2>Отзывы</h2>
+                <ul class="reviews-list">
+                    <li class="reviews-item">
+                        <blockquote>
+                            <p>Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!</p>
+                            <cite>Марина</cite>
+                        </blockquote>
+                    </li>
+                    <li class="reviews-item">
+                        <blockquote>
+                            <p>Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду ещё заказывать!</p>
+                            <cite>Татьяна</cite>
+                        </blockquote>
+                    </li>
+                    <li class="reviews-item">
+                        <blockquote>
+                            <p>Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно соберут красивый букет!</p>
+                            <cite>Ольга</cite>
+                        </blockquote>
+                    </li>
+                </ul>
         </section>
     </main>
     <footer class="page-footer">
         <div class="contacts">
+            <h2 class="visually-hidden">Контакты</h2>
+            <img src="img/map.png" alt="Карта с нашим адресом: Санкт-Петербург, ул. Большая Конюшенная, 19" width="1440" height="644">
             <p>Мы ждем вас</p>
-            <dl>
+            <dl class="contacts-list">
                 <dt>Приходите к нам:</dt>
                 <dd>Санкт-Петербург, ул. Большая Конюшенная, 19</dd>
-            </dl>
-            <dl>
+            
                 <dt>Режим работы :</dt>
                 <dd>Пн-Вск, с 9-00 до 20-00</dd>
-            </dl>
-            <dl>
+            
                 <dt>Позвоните нам:</dt>
                 <dd>
                     <a href="tel:+78129834719">+ 7 (812) 983-47-19</a>
                 </dd>
-            </dl>
-            <dl>
+            
                 <dt>Напишите нам:</dt>
                 <dd>
                     <a href="mailto:info@botanika.ru">info@botanika.ru</a>
@@ -172,33 +213,40 @@
             </dl>
         </div>
         <div class="footer-menu">
-            <div class="logo">
-                <a href="" class="menu-link">
+            <div class="logo"><!--можно без дива -->
+                <a class="menu-link">
                     <img src="img/logo.svg" width="100" height = "33">
                 </a>
             </div>
             <ul class="footer-menu-list">
                 <li class="footer-menu-item">
-                    <a href="" class="menu-link">Каталог</a>
+                    <a href="#" class="menu-link">Каталог</a>
                 </li>
                 <li class="footer-menu-item">
-                    <a href="" class="menu-link">Доставка и оплата</a>
+                    <a href="#" class="menu-link">Доставка и оплата</a>
                 </li>
                 <li class="footer-menu-item">
-                    <a href="" class="menu-link">Отзывы</a>
+                    <a href="#" class="menu-link">Отзывы</a>
                 </li>
                 <li class="footer-menu-item">
                     <a href="" class="menu-link">Спецпредложения</a>
                 </li>
                 <li class="footer-menu-item">
-                    <a href="" class="menu-link">Контакты</a>
+                    <a href="#" class="menu-link">Контакты</a>
                 </li>
             </ul>
             <div class="social">
-                    <img src="img/instagram_icon.svg" width="21" height="20">
-                    <img src="img/facebook_icon.svg" width="12" height="20">
-                    <img src="img/twitter_icon.svg" width="26" height="20">
-            </div>
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="#" class="insta-link social-link">Инстаграм</a>
+                    </li>
+                    <li class="social-item">
+                         <a href="#" class="fb-link social-link">Фейсбук</a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="tw-link social-link">Твиттер</a>
+                    </li>
+                </ul>
         </div>
     </footer>
 </body>
