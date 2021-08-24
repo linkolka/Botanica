@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Botanika - цветы в Петербурге</title>
 </head>
 <body>
     <header class="page-header">
         <nav class="header-nav">
-            <a class="logo">
-                <img src="img/logo.svg" width="100" height = "33">
-            </a>
+            
             <ul class="menu-list">
                 <li class="menu-item">
                     <a href="#" class="menu-link">Каталог</a>
@@ -21,6 +21,11 @@
                 </li>
                 <li class="menu-item">
                     <a href="#" class="menu-link">Отзывы</a>
+                </li>
+                <li class="menu-item">
+                    <a href ="" class="logo">
+                        <img src="img/logo.svg" width="100" height = "33">
+                    </a>
                 </li>
                 <li class="menu-item">
                     <a href="#" class="menu-link">Спецпредложения</a>
@@ -36,30 +41,34 @@
     </header>
     <main class="main-content">
         <section class="promo">
-            <div class="promo-text">
-                <h1> Авторские букеты <span class="italic">в Петербурге</span></h1>
-                <p>Оригинальные свежие букеты с доставкой по всему городу</p>
-                <a href="#" class="btn">Смотреть каталог</a>
-            </div> <!--картинки в дивы обернуть-->
-            <img src="img/promo1.jpg" alt="букет розовых тюльпанов" width="386" height="404" class="promo-img">
-            <img src="img/promo2.jpg" alt="букет белых альстромерий и розовых роз" width="386" height="404" class="promo-img">
+            <div class="container">
+                <div class="promo-text">
+                    <h1> Авторские букеты <span class="italic">в Петербурге</span></h1>
+                    <p>Оригинальные свежие букеты с доставкой по всему городу</p>
+                    <a href="#" class="btn">Смотреть каталог</a>
+                </div> <!--картинки в дивы обернуть-->
+                <img src="img/promo1.jpg" alt="букет розовых тюльпанов" width="386" height="404" class="promo-img">
+                <img src="img/promo2.jpg" alt="букет белых альстромерий и розовых роз" width="386" height="404" class="promo-img">
+            </div>
         </section>
         <section class="advantages"> 
-            <h2 class="vissually-hidden">Наши преимущества</h2>
-            <ul class="advantages-list">
-                <li class="advantages-item">
-                    <h3 class="advantages-heading">Быстрая доставка</h3>
-                    <p class="advantages-paragraph">Можем собрать букет и передать его в доставку всего за час.</p>
-                </li>
-                <li class="advantages-item">
-                    <h3 class="advantages-heading">Всегда свежие цветы</h3>
-                    <p class="advantages-paragraph">Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
-                </li>
-                <li class="advantages-item">
-                    <h3 class="advantages-heading">Отправляем фото цветов</h3>
-                    <p class="advantages-paragraph">Перед доставкой сделаем фотографию букета и отправим вам.</p>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="visually-hidden">Наши преимущества</h2>
+                <ul class="advantages-list">
+                    <li class="advantages-item advantages-item-delivery">
+                        <h3 class="advantages-heading">Быстрая доставка</h3>
+                        <p class="advantages-paragraph">Можем собрать букет и передать его в доставку всего за час.</p>
+                    </li>
+                    <li class="advantages-item advantages-item-quality">
+                        <h3 class="advantages-heading">Всегда свежие цветы</h3>
+                        <p class="advantages-paragraph">Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
+                    </li>
+                    <li class="advantages-item advantages-item-photos">
+                        <h3 class="advantages-heading">Отправляем фото цветов</h3>
+                        <p class="advantages-paragraph">Перед доставкой сделаем фотографию букета и отправим вам.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="popular">
             <h2 class="section-header">Популярные букеты</h2>
@@ -67,7 +76,7 @@
                 <div class="popular-description">
                     <h3>Букет «Нежность»</h3>
                     <p>Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
-                    <p>30 × 40 см</p>
+                    <p class="bouquet-size">30 × 40 см</p>
                     <p class="bouquet-price">3600 руб.</p>
                     <a href="#" class="btn">Заказать</a>
                 </div>
@@ -85,88 +94,98 @@
                     <button class="arrow arrow-right" type="button">
                         <svg width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z" fill="#AE7C78"/>
-                        </svg>
+                        </svg>                     
                     </button>
+                    
                 </div>
         </section>
         <section class="catalog">
-            <h2 class="hidden">Каталог</h2>
-            <ul class="catalog-list">
-                <li class="catalog-item">
-                    <a href="#" class="catalog-link">
-                        <h3>Свадебные букеты</h3>
-                        <p>Букеты для невес</p>
-                    </a>
-                </li>
-                <li class="catalog-item">
-                    <a href="#" class="catalog-link">
-                        <h3>Букеты с пионами</h3>
-                        <p>Букеты с сезонными пионами</p>
-                    </a>
-                </li>
-                <li class="catalog-item">
-                    <a href="#" class="catalog-link">
-                         <h3>Выбрать букет</h3>
-                         <p>Букеты в ассортименте</p>
-                    </a>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="visually-hidden">Каталог</h2>
+                <ul class="catalog-list">
+                    <li class="catalog-item">
+                        <a href="#" class="catalog-link">
+                            <span>Свадебные букеты</span>
+                            <span>Букеты для невест</span>
+                        </a>
+                    </li>
+                    <li class="catalog-item">
+                        <a href="#" class="catalog-link">
+                            <span>Букеты с пионами</span>
+                            <span>Букеты с сезонными пионами</span>
+                        </a>
+                    </li>
+                    <li class="catalog-item">
+                        <a href="#" class="catalog-link">
+                            <span>Выбрать букет</span>
+                            <span>Букеты в ассортименте</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="discounts">
-            <h2 class="hidden">Скидки</h2>
-            <div class="discount-description">
-                <h3>Скидка 10% на первый заказ</h3>
-                <p>Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
+            <h2 class="visually-hidden">Скидки</h2>
+            <div class="container">
+                <div class="discount-description">
+                    <h3>Скидка 10% <br>на первый заказ</h3>
+                    <p>Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
             </div>
             <img src="img/discount-image.jpg" width="590" height="391" alt="Большой букет из разных цветов">
+            </div>
         </section>
         <section class="scheme">
-            <div class="scheme-description">
+            <div class="container">
                 <h2>4 шага к идеальному букету</h2>
                 <ul class="scheme-list">
-                    <li class="scheme-item">
+                    <li class="scheme-item order">
                         <h3>Заказ</h3>
                         <p>Выберите понравившийся букет из каталога и оформите заказ</p>
                     </li>
-                    <li class="scheme-item">
+                    <li class="scheme-item details">
                         <h3>Уточнение деталей</h3>
                         <p>Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
                     </li>
-                    <li class="scheme-item">
+                    <li class="scheme-item payment">
                         <h3>Оплата</h3>
                         <p>Оплатить заказ можно онлайн на сайте или при получении</p>
                     </li>
-                    <li class="scheme-item">
+                    <li class="scheme-item delivery">
                         <h3>Доставка</h3>
                         <p>Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="social-section">
-            <h2>Следите за нашими новостями</h2>
-                <p>
-                    Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым
-                </p>
-                <ul class="social-list">
-                    <li class="social-item">
-                        <a href="#" class="insta-link social-link">Инстаграм</a>
-                    </li>
-                    <li class="social-item">
-                         <a href="#" class="fb-link social-link">Фейсбук</a>
-                    </li>
-                     <li class="social-item">
-                        <a href="#" class="tw-link social-link">Твиттер</a>
-                     </li>
-                </ul>
+        <section class="social-and-news">
+            <div class="container">
+                <div class="social">
+                    <h2>Следите за нашими новостями</h2>
+                    <p>
+                        Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым
+                    </p>
+                    <ul class="social-list">
+                        <li class="social-item">
+                            <a href="#" class="insta-link social-link">Инстаграм</a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="fb-link social-link">Фейсбук</a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="tw-link social-link">Твиттер</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="social-images">
                     <img src="img/social1.jpg" width="285" height="220" alt="Букет с зелеными цветами">
                     <img src="img/social2.jpg" width="285" height="220" alt="Букет из розовых роз">
                     <img src="img/social3.jpg" width="387" height="460" alt="Букет из розовых гвоздик">
                 </div>
+            </div>
         </section>
         <section class="reviews">
-            <h2>Отзывы</h2>
+            <div class="container">
+                <h2>Отзывы</h2>
                 <ul class="reviews-list">
                     <li class="reviews-item">
                         <blockquote>
@@ -187,12 +206,13 @@
                         </blockquote>
                     </li>
                 </ul>
+            </div>
         </section>
     </main>
     <footer class="page-footer">
-        <div class="contacts">
             <h2 class="visually-hidden">Контакты</h2>
-            <img src="img/map.png" alt="Карта с нашим адресом: Санкт-Петербург, ул. Большая Конюшенная, 19" width="1440" height="644">
+            <img src="img/map.png" alt="Карта с нашим адресом: Санкт-Петербург, ул. Большая Конюшенная, 19" width="1440" height="644" class="map">
+            <div class="contacts">
             <p>Мы ждем вас</p>
             <dl class="contacts-list">
                 <dt>Приходите к нам:</dt>
@@ -213,40 +233,43 @@
             </dl>
         </div>
         <div class="footer-menu">
-            <div class="logo"><!--можно без дива -->
+            <div class="container">
+                <div class="logo"><!--можно без дива -->
                 <a class="menu-link">
-                    <img src="img/logo.svg" width="100" height = "33">
+                    <img src="img/logo-footer.svg" width="100" height = "33">
                 </a>
-            </div>
-            <ul class="footer-menu-list">
-                <li class="footer-menu-item">
-                    <a href="#" class="menu-link">Каталог</a>
-                </li>
-                <li class="footer-menu-item">
-                    <a href="#" class="menu-link">Доставка и оплата</a>
-                </li>
-                <li class="footer-menu-item">
-                    <a href="#" class="menu-link">Отзывы</a>
-                </li>
-                <li class="footer-menu-item">
-                    <a href="" class="menu-link">Спецпредложения</a>
-                </li>
-                <li class="footer-menu-item">
-                    <a href="#" class="menu-link">Контакты</a>
-                </li>
-            </ul>
-            <div class="social">
-                <ul class="social-list">
-                    <li class="social-item">
-                        <a href="#" class="insta-link social-link">Инстаграм</a>
+                </div>
+                <ul class="footer-menu-list">
+                    <li class="footer-menu-item">
+                        <a href="#" class="footer-menu-link">Каталог</a>
                     </li>
-                    <li class="social-item">
-                         <a href="#" class="fb-link social-link">Фейсбук</a>
+                    <li class="footer-menu-item">
+                        <a href="#" class="footer-menu-link">Доставка и оплата</a>
                     </li>
-                    <li class="social-item">
-                        <a href="#" class="tw-link social-link">Твиттер</a>
+                    <li class="footer-menu-item">
+                        <a href="#" class="footer-menu-link">Отзывы</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="" class="footer-menu-link">Спецпредложения</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="#" class="footer-menu-link">Контакты</a>
                     </li>
                 </ul>
+                <div class="social">
+                    <ul class="footer-social-list">
+                        <li class="footer-social-item">
+                            <a href="#" class="insta-link social-link">Инстаграм</a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="#" class="fb-link social-link">Фейсбук</a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="#" class="tw-link social-link">Твиттер</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
