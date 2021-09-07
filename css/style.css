@@ -138,12 +138,13 @@ h1 {
 
 .advantages-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .advantages-item {
     max-width: 285px;
-    margin-left: 95px;
+    padding-left: 95px;
     position: relative;
 }
 
@@ -151,7 +152,7 @@ h1 {
     content: '';
     position: absolute;
     background-repeat: no-repeat;
-    right: 300px;
+    left: 0;
     top: 0;
 }
 
@@ -165,7 +166,7 @@ h1 {
     background-image: url('/img/advantage2.svg');
     width: 52px;
     height: 52px;
-    right: 290px;
+    
 }
 
 .advantages-item-photos::before {
@@ -316,7 +317,7 @@ button {
     flex-direction: column;
     gap: 8px;
     position: relative;
-    margin-top: 60px;
+    padding-top: 60px;
     width: 285px;
 }
 
@@ -326,29 +327,33 @@ button {
     width: 66px;
     height: 52px;
     background-image: url('/img/scheme1.svg');
-    top: -60px;
-    left: 109px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .scheme-item.details::before {
     width: 38px;
     background-image: url('/img/scheme2.svg');
-    top: -60px;
-    left: 123px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .scheme-item.payment::before {
     width: 70px;
     background-image: url('/img/scheme3.svg');
-    top: -60px;
-    left: 107px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .scheme-item.delivery::before {
     width: 83px;
     background-image: url('/img/scheme4.svg');
-    top: -60px;
-    left: 101px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .scheme-item h3 {
@@ -481,8 +486,7 @@ button {
     background-color: #fff;
     max-width: 386px;
     max-height: 520px;
-    padding-left: 35px;
-    padding-right: 108px;
+    padding: 40px 108px 20px 35px;
     border-radius: 12px;
 }
 
@@ -491,7 +495,6 @@ button {
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
-    margin-top: 40px;
     margin-bottom: 42px;
 }
 
