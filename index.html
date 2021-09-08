@@ -11,8 +11,10 @@
 </head>
 <body>
     <header class="page-header">
-        <nav class="header-nav">
-            
+        <nav class="header-nav container">
+            <a href ="" class="logo">
+                <img src="img/logo.svg" width="100" height = "33">
+            </a>
             <ul class="menu-list">
                 <li class="menu-item">
                     <a href="#" class="menu-link">Каталог</a>
@@ -23,11 +25,7 @@
                 <li class="menu-item">
                     <a href="#" class="menu-link">Отзывы</a>
                 </li>
-                <li class="menu-item">
-                    <a href ="" class="logo">
-                        <img src="img/logo.svg" width="100" height = "33">
-                    </a>
-                </li>
+                
                 <li class="menu-item">
                     <a href="#" class="menu-link">Спецпредложения</a>
                 </li>
@@ -42,14 +40,18 @@
     </header>
     <main class="main-content">
         <section class="promo">
-            <div class="container">
+            <div class="container grid-promo">
                 <div class="promo-text">
                     <h1> Авторские букеты <span class="italic">в Петербурге</span></h1>
                     <p>Оригинальные свежие букеты с доставкой по всему городу</p>
                     <a href="#" class="btn">Смотреть каталог</a>
                 </div> <!--картинки в дивы обернуть-->
-                <img src="img/promo1.jpg" alt="букет розовых тюльпанов" width="386" height="404" class="promo-img">
-                <img src="img/promo2.jpg" alt="букет белых альстромерий и розовых роз" width="386" height="404" class="promo-img">
+                <div class="promo-image">
+                    <img src="img/promo1.jpg" alt="букет розовых тюльпанов" width="386" height="404">
+                </div>
+               <div class="promo-image">
+                    <img src="img/promo2.jpg" alt="букет белых альстромерий и розовых роз" width="386" height="404">
+               </div>
             </div>
         </section>
         <section class="advantages"> 
@@ -127,12 +129,14 @@
         </section>
         <section class="discounts">
             <h2 class="visually-hidden">Скидки</h2>
-            <div class="container">
+            <div class="container grid-discounts">
                 <div class="discount-description">
                     <h3>Скидка 10% <br>на первый заказ</h3>
                     <p>Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
             </div>
-            <img src="img/discount-image.jpg" width="590" height="391" alt="Большой букет из разных цветов">
+            <div class="discount-image">
+                 <img src="img/discount-image.jpg" width="590" height="391" alt="Большой букет из разных цветов">
+            </div>
             </div>
         </section>
         <section class="scheme">
@@ -159,7 +163,7 @@
             </div>
         </section>
         <section class="social-and-news">
-            <div class="container">
+            <div class="container social-and-news-grid">
                 <div class="social">
                     <h2>Следите за нашими новостями</h2>
                     <p>
@@ -185,7 +189,7 @@
             </div>
         </section>
         <section class="reviews">
-            <div class="container">
+            <div class="container border-reviews">
                 <h2>Отзывы</h2>
                 <ul class="reviews-list">
                     <li class="reviews-item">
