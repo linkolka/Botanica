@@ -392,7 +392,7 @@ h2.section-header {
     position: absolute;
     width: 66px;
     height: 52px;
-    background-image: url('/img/scheme1.svg');
+    background-image: url('../img/scheme1.svg');
     top: 0;
     left: 50%;
     transform: translate(-50%);
@@ -400,7 +400,7 @@ h2.section-header {
 
 .scheme-item.details::before {
     width: 38px;
-    background-image: url('/img/scheme2.svg');
+    background-image: url('../img/scheme2.svg');
     top: 0;
     left: 50%;
     transform: translate(-50%);
@@ -408,7 +408,7 @@ h2.section-header {
 
 .scheme-item.payment::before {
     width: 70px;
-    background-image: url('/img/scheme3.svg');
+    background-image: url('../img/scheme3.svg');
     top: 0;
     left: 50%;
     transform: translate(-50%);
@@ -416,7 +416,7 @@ h2.section-header {
 
 .scheme-item.delivery::before {
     width: 83px;
-    background-image: url('/img/scheme4.svg');
+    background-image: url('../img/scheme4.svg');
     top: 0;
     left: 50%;
     transform: translate(-50%);
@@ -470,17 +470,17 @@ h2.section-header {
 }
 
 .insta-link {
-    background-image: url('/img/instagram_icon.svg');
+    background-image: url('../img/instagram_icon.svg');
     width: 21px;
 }
 
 .fb-link {
-    background-image: url('/img/facebook_icon.svg');
+    background-image: url('../img/facebook_icon.svg');
     width: 12px;
 }
 
 .tw-link {
-    background-image: url('/img/twitter_icon.svg');
+    background-image: url('../img/twitter_icon.svg');
     width: 26px;
 }
 
@@ -611,16 +611,16 @@ h2.section-header {
 }
 
 .f-insta-link {
-    background-image: url('/img/instagram_icon_f.svg');
+    background-image: url('../img/instagram_icon_f.svg');
     width: 21px;
 }
 
 .f-fb-link {
-    background-image: url('/img/facebook_icon_f.svg');
+    background-image: url('../img/facebook_icon_f.svg');
     width: 12px;
 }
 
 .f-tw-link {
-    background-image: url('/img/twitter_icon_f.svg');
+    background-image: url('../img/twitter_icon_f.svg');
     width: 26px;
 }
