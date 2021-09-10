@@ -179,19 +179,19 @@ h1 {
 }
 
 .advantages-item-delivery::before {
-    background-image: url('/img/advantage1.svg');
+    background-image: url('../img/advantage1.svg');
     width: 82px;
     height: 52px;
 }
 
 .advantages-item-quality::before {
-    background-image: url('/img/advantage2.svg');
+    background-image: url('../img/advantage2.svg');
     width: 52px;
     height: 52px; 
 }
 
 .advantages-item-photos::before {
-    background-image: url('/img/advantage3.svg');
+    background-image: url('../img/advantage3.svg');
     width: 59px;
     height: 52px;
 }
@@ -281,17 +281,17 @@ h2.section-header {
 .catalog-item:nth-child(3n+1) {
     grid-column-start: 1;
     grid-column-end: 2;
-    background-image: url('/img/wedding-bouquet.jpg');
+    background-image: url('../img/wedding-bouquet.jpg');
 }
 .catalog-item:nth-child(3n+2) {
     grid-column-start: 2;
     grid-column-end: 3;
-    background-image: url('/img/peony-bouquet.jpg');
+    background-image: url('../img/peony-bouquet.jpg');
 }
 .catalog-item:nth-child(3n) {
     grid-column-start: 3;
     grid-column-end: 4;
-    background-image: url('/img/bouquet-choice.jpg');
+    background-image: url('../img/bouquet-choice.jpg');
 }
 .catalog-link {
     min-height: 442px;
@@ -301,7 +301,7 @@ h2.section-header {
     justify-content: center;
     align-items: center;
     border-radius: 10px;  
-    background-image: url('/img/rect-filter.png');
+    background-image: url('../img/rect-filter.png');
 
 }
 
