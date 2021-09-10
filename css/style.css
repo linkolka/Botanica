@@ -302,7 +302,11 @@ h2.section-header {
     align-items: center;
     border-radius: 10px;  
     background-image: url('../img/rect-filter.png');
+    transition: 1s;
 
+}
+.catalog-link:hover {
+    background-image: none;
 }
 
 .catalog-link span {
