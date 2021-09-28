@@ -1,5 +1,5 @@
 body {
-    
+    min-width: 1220px;
     font-family: Montserrat, Verdana, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -17,6 +17,10 @@ h1, h2 {
 h1 span {
     font-style: italic;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 a {
     text-decoration: none;
     color: #AE7C78;
@@ -31,7 +35,12 @@ dl, dd, p, blockquote, h3 {
     padding: 0;
 }
 .container {
-    max-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.container-small {
+    width: 794px;
     margin: 0 auto;
 }
 .visually-hidden {
@@ -45,11 +54,12 @@ dl, dd, p, blockquote, h3 {
     display: inline-block;
     background-color: #D89999;
     border-radius: 40px;
-    padding: 30px 0;
+    padding: 30px 70px;
     text-align: center;
     color: #fff;
-    width: 285px;
-    box-sizing: border-box;
+    vertical-align: middle;
+    /* width: 285px;
+    box-sizing: border-box; */
 }
 .btn:hover {
     filter: saturate(1.2) drop-shadow(0 0 5px #D89999); 
@@ -58,18 +68,16 @@ dl, dd, p, blockquote, h3 {
     filter: opacity(0.8); 
 }
 /*Шапка*/
-header {
+.page-header {
     margin-top: 26px;
     margin-bottom: 82px;
-}
-nav {
     position: relative;
     border-top: 1px solid #AE7C78;
     border-bottom: 1px solid #AE7C78;
 }
 .logo {
     position: absolute;
-    margin-top: 16px;
+    top: 16px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -79,7 +87,7 @@ nav {
     justify-content: space-between;
 }
 .menu-item:nth-child(3) {
-    margin-right: 224px;
+    margin-right: 97px;
 }
 .menu-link {
     display: inline-block;
@@ -129,8 +137,9 @@ h1 {
     line-height: 29px;
     margin-bottom: 64px;
 }
-.promo-image img{
+.promo-image{
     border-radius: 10px;
+    display: block;
 }
 /*Преимущества*/
 .advantages {
@@ -140,7 +149,7 @@ h1 {
 .advantages-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 45px;
+    gap: 4%;
 }
 .advantages-item {
     padding-left: 95px;
@@ -214,6 +223,9 @@ h2.section-header {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
+}
+.btn-popular {
+    padding: 30px 107px;
 }
 .bouquet-size {
     margin-top: 20px;
@@ -480,6 +492,7 @@ h2.section-header {
 .border-reviews {
     border: 1px solid #AE7C78;
     padding: 40px 44px 64px;
+    box-sizing: border-box;
 }
 .reviews h2 {
     margin-bottom: 40px;
@@ -505,24 +518,27 @@ h2.section-header {
     font-style: normal;
 }
 /*Футер_карта и контакты*/
-.page-footer {
-    position: relative;   
-}
-.footer-contacts {
-    padding: 52px 20px 72px 222px;
-}
 .map {
+    position: relative;   
+    padding-top: 52px;
+    padding-bottom: 69px;
+}
+
+.map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     z-index: -1;
 }
 .contacts {
     box-sizing: border-box;
     max-width: 386px;
     max-height: 520px;
-    padding: 40px 108px 20px 35px;
+    padding: 40px 108px 65px 35px;
+    margin-left: 102px;
     border-radius: 12px;
     background-color: #fff;
 }
